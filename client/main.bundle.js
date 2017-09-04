@@ -300,12 +300,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var GlobalService = (function () {
     function GlobalService() {
-        this.apiAddress = 'http://localhost:1300/api';
-        this.baseAddress = 'http://localhost:4200';
+        this.apiAddress = 'https://app-8pm.herokuapp.com/api';
+        this.baseAddress = 'https://app-8pm.herokuapp.com/';
         this.cartName = 'cart';
         this.paymentGatewayUrl = 'https://test.payu.in/_payment';
-        this.successUrl = 'http://localhost:1300/api/store/paymentstatus';
-        this.failedUrl = 'http://localhost:1300/api/store/paymentstatus';
+        this.successUrl = 'https://app-8pm.herokuapp.com//api/store/paymentstatus';
+        this.failedUrl = 'https://app-8pm.herokuapp.com//api/store/paymentstatus';
+        // this.apiAddress = 'http://localhost:1300/api';
+        // this.baseAddress = 'http://localhost:4200';
+        // this.cartName='cart';
+        // this.paymentGatewayUrl='https://test.payu.in/_payment';
+        // this.successUrl='http://localhost:1300/api/store/paymentstatus';
+        // this.failedUrl='http://localhost:1300/api/store/paymentstatus';
         this.key = 'gtKFFx';
         this.salt = 'eCwWELxi';
     }
